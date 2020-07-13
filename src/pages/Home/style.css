@@ -1,3 +1,23 @@
-h1 {
-    color: blue;
+.main-container {
+    display: flex;    
+    margin: 20px 20px 20px 20px;
+}
+
+.left-panel {
+    width: 30%;
+    min-width: 400px;
+    margin-right: 10px;
+}
+
+.right-panel {
+    background-color: #fff;
+    width: 100%;
+}
+
+.slide-container {
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;     
+    margin-top: 20px;
 }
