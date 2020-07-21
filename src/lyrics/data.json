@@ -1,0 +1,1597 @@
+[
+    {
+     "lyric_name": "REINA EM MIM ",
+     "lines": [
+      {
+       "id": 0,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": "REINA EM MIM "
+      },
+      {
+       "id": 1,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": ""
+      },
+      {
+       "id": 2,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre toda a terra Tu és o Rei"
+      },
+      {
+       "id": 3,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre as montanhas e o pôr-do-sol"
+      },
+      {
+       "id": 4,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Uma coisa só meu desejo é"
+      },
+      {
+       "id": 5,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 6,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": ""
+      },
+      {
+       "id": 7,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 8,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 9,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 10,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 11,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 12,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": ""
+      },
+      {
+       "id": 13,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 14,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 15,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 16,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 17,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": ""
+      },
+      {
+       "id": 18,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 19,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 20,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 21,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 22,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 23,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 24,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 25,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 26,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 27,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": ""
+      },
+      {
+       "id": 28,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 29,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 30,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 31,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 32,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 33,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": ""
+      },
+      {
+       "id": 34,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 35,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 36,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 37,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 38,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 39,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 40,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 41,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 42,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 22,
+       "phrase": "Vem reinar em mim, Senhor"
+      }
+     ],
+     "lines_slide": 10,
+     "lines_subtitle": 2,
+     "total_slides": 21
+    },
+    {
+     "lyric_name": "Outra letra qualquer",
+     "lines": [
+      {
+       "id": 0,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": "Outra letra qualquer"
+      },
+      {
+       "id": 1,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": ""
+      },
+      {
+       "id": 2,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Linha 1"
+      },
+      {
+       "id": 3,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Linha2"
+      },
+      {
+       "id": 4,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Linha 3"
+      },
+      {
+       "id": 5,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Linha4"
+      }
+     ],
+     "lines_slide": 10,
+     "lines_subtitle": 2,
+     "total_slides": 3
+    },
+    {
+     "lyric_name": "REINA EM MIM 2",
+     "lines": [
+      {
+       "id": 0,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": "REINA EM MIM 2"
+      },
+      {
+       "id": 1,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": ""
+      },
+      {
+       "id": 2,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre toda a terra Tu és o Rei"
+      },
+      {
+       "id": 3,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre as montanhas e o pôr-do-sol"
+      },
+      {
+       "id": 4,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Uma coisa só meu desejo é"
+      },
+      {
+       "id": 5,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 6,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": ""
+      },
+      {
+       "id": 7,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 8,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 9,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 10,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 11,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 12,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": ""
+      },
+      {
+       "id": 13,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 14,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 15,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 16,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 17,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": ""
+      },
+      {
+       "id": 18,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 19,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 20,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 21,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 22,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 23,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 24,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 25,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 26,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 27,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": ""
+      },
+      {
+       "id": 28,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 29,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 30,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 31,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 32,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 33,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": ""
+      },
+      {
+       "id": 34,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 35,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 36,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 37,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 38,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 39,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 40,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 41,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 42,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 22,
+       "phrase": "Vem reinar em mim, Senhor"
+      }
+     ],
+     "lines_slide": 10,
+     "lines_subtitle": 2,
+     "total_slides": 21
+    },
+    {
+     "lyric_name": "REINA EM MIM 3",
+     "lines": [
+      {
+       "id": 0,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": "REINA EM MIM 3"
+      },
+      {
+       "id": 1,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": ""
+      },
+      {
+       "id": 2,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre toda a terra Tu és o Rei"
+      },
+      {
+       "id": 3,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre as montanhas e o pôr-do-sol"
+      },
+      {
+       "id": 4,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Uma coisa só meu desejo é"
+      },
+      {
+       "id": 5,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 6,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": ""
+      },
+      {
+       "id": 7,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 8,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 9,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 10,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 11,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 12,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": ""
+      },
+      {
+       "id": 13,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 14,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 15,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 16,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 17,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": ""
+      },
+      {
+       "id": 18,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 19,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 20,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 21,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 22,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 23,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 24,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 25,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 26,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 27,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": ""
+      },
+      {
+       "id": 28,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 29,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 30,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 31,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 32,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 33,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": ""
+      },
+      {
+       "id": 34,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 35,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 36,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 37,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 38,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 39,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 40,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 41,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 42,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 22,
+       "phrase": "Vem reinar em mim, Senhor"
+      }
+     ],
+     "lines_slide": 10,
+     "lines_subtitle": 2,
+     "total_slides": 21
+    },
+    {
+     "lyric_name": "REINA EM MIM 4",
+     "lines": [
+      {
+       "id": 0,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": "REINA EM MIM 4"
+      },
+      {
+       "id": 1,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": ""
+      },
+      {
+       "id": 2,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre toda a terra Tu és o Rei"
+      },
+      {
+       "id": 3,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre as montanhas e o pôr-do-sol"
+      },
+      {
+       "id": 4,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Uma coisa só meu desejo é"
+      },
+      {
+       "id": 5,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 6,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": ""
+      },
+      {
+       "id": 7,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 8,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 9,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 10,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 11,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 12,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": ""
+      },
+      {
+       "id": 13,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 14,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 15,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 16,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 17,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": ""
+      },
+      {
+       "id": 18,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 19,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 20,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 21,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 22,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 23,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 24,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 25,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 26,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 27,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": ""
+      },
+      {
+       "id": 28,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 29,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 30,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 31,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 32,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 33,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": ""
+      },
+      {
+       "id": 34,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 35,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 36,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 37,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 38,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 39,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 40,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 41,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 42,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 22,
+       "phrase": "Vem reinar em mim, Senhor"
+      }
+     ],
+     "lines_slide": 10,
+     "lines_subtitle": 2,
+     "total_slides": 21
+    },
+    {
+     "lyric_name": "REINA EM MIM 5",
+     "lines": [
+      {
+       "id": 0,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": "REINA EM MIM 5"
+      },
+      {
+       "id": 1,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 1,
+       "phrase": ""
+      },
+      {
+       "id": 2,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre toda a terra Tu és o Rei"
+      },
+      {
+       "id": 3,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 2,
+       "phrase": "Sobre as montanhas e o pôr-do-sol"
+      },
+      {
+       "id": 4,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Uma coisa só meu desejo é"
+      },
+      {
+       "id": 5,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 3,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 6,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": ""
+      },
+      {
+       "id": 7,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 4,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 8,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 9,
+       "type": "phrase",
+       "id_slide": 1,
+       "id_subtitle": 5,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 10,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 11,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 6,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 12,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": ""
+      },
+      {
+       "id": 13,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 7,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 14,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 15,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 8,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 16,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 17,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 9,
+       "phrase": ""
+      },
+      {
+       "id": 18,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 19,
+       "type": "phrase",
+       "id_slide": 2,
+       "id_subtitle": 10,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 20,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 21,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 11,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 22,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 23,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 12,
+       "phrase": "Sobre o meu pensar, tudo que eu falar"
+      },
+      {
+       "id": 24,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Faz-me refletir a beleza que há em ti"
+      },
+      {
+       "id": 25,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 13,
+       "phrase": "Tu és para mim mais que tudo aqui"
+      },
+      {
+       "id": 26,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": "Vem reinar de novo em mim"
+      },
+      {
+       "id": 27,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 14,
+       "phrase": ""
+      },
+      {
+       "id": 28,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 29,
+       "type": "phrase",
+       "id_slide": 3,
+       "id_subtitle": 15,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 30,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 31,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 16,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 32,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 33,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 17,
+       "phrase": ""
+      },
+      {
+       "id": 34,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Reina em mim com Teu poder"
+      },
+      {
+       "id": 35,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 18,
+       "phrase": "Sobre a escuridão"
+      },
+      {
+       "id": 36,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Sobre os sonhos meus"
+      },
+      {
+       "id": 37,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 19,
+       "phrase": "Tu és o Senhor de tudo o que sou"
+      },
+      {
+       "id": 38,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 39,
+       "type": "phrase",
+       "id_slide": 4,
+       "id_subtitle": 20,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 40,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Vem reinar em mim, Senhor"
+      },
+      {
+       "id": 41,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 21,
+       "phrase": "Reina sobre mim"
+      },
+      {
+       "id": 42,
+       "type": "phrase",
+       "id_slide": 5,
+       "id_subtitle": 22,
+       "phrase": "Vem reinar em mim, Senhor"
+      }
+     ],
+     "lines_slide": 10,
+     "lines_subtitle": 2,
+     "total_slides": 21
+    }
+   ]

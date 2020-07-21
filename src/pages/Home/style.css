@@ -7,6 +7,46 @@
     width: 30%;
     min-width: 400px;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+
+.left-panel .lyric-select {
+    display: flex;
+    flex: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.left-panel #formLyricSelect {
+    width: 100%;
+}
+
+.left-panel .lyrics-buttons {
+    display: flex;
+    flex: 0;
+}
+
+.left-panel .lyric-edit {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.left-panel .lyrics-buttons {
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+.left-panel .slide-config-inputs {
+    display: flex;
+    align-self: flex-end;
+}
+
+.left-panel .slide-config-inputs input {
+    width: 80px;
 }
 
 .right-panel {
@@ -20,4 +60,20 @@
     justify-content: center;
     align-items: center;     
     margin-top: 20px;
+}
+
+.slide-control-buttons {
+    display: flex;   
+    margin-top: 10px;        
+}
+
+.slide-control-buttons .place-right {
+    position: absolute;
+    right: 0px;
+}
+
+.slide-control-buttons .place-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
