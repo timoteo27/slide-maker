@@ -1,4 +1,4 @@
-# Meuc Slide Maker
+# Slide Maker
 
 A simple React program to help the creation of slides and subtitles of songs. The registered songs are generated in a specific layout for sending via NDI (https://www.newtek.com/ndi/applications/) to OBS Studio.
 
