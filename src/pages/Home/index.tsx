@@ -1,26 +1,18 @@
-import React from 'react';
+import React,  { 
+    useState, useEffect,
+    ChangeEvent, KeyboardEvent } from 'react';
 
-import { ChangeEvent, MouseEvent, useState, useEffect } from 'react';
-
-import Button from '@material-ui/core/Button';
-import Fab from '@material-ui/core/Fab';
-import Snackbar from '@material-ui/core/Snackbar';
+import { Box, Button, Fab, Snackbar, FormControl, Select, CircularProgress, Typography } from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
-
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-
-import { NavigateNext, NavigateBefore, VisibilityOff, Visibility } from '@material-ui/icons';
 import { CSSProperties } from '@material-ui/core/styles/withStyles';
-import SlideOutputComp from './components/SlideOutputComp';
+import { NavigateNext, NavigateBefore, VisibilityOff, Visibility } from '@material-ui/icons';
 
-import './style.css';
-import { SlideOutput, Lyric } from './types';
+import { SlideOutput, Lyric, LyricLine } from './types';
+
+import SlideOutputComp from './components/SlideOutputComp';
 import CSSPanelComp from './components/CSSPanelComp';
-import LyricEditorComp from './components/LyricEditorComp';
+import LyricEditorComp from './components/LyricEditor/LyricEditorComp';
+import './style.css';
 
 import DATAJSON_LYRICS from '../../lyrics/data.json';
 
@@ -68,25 +60,23 @@ export default function Home() {
     const [snackbarMessage, setSnackbarMessage] = useState('');
     const [hideSlide, setHideSlide] = useState(false);
 
-    const [currentLyric, setCurrentLyric] = useState<Lyric>({ lyric_name: '', lines: [], lines_slide: 0, lines_subtitle: 0, total_slides: 0 });
+    const [currentLyric, setCurrentLyric] = useState<Lyric>({ id: '', lyric_name: '', lines: [], lines_slide: 0, lines_subtitle: 0, total_slides: 0 });
     const [currentLyricIndex, setCurrentLyricIndex] = useState<number[]>([]);
     const [slideOutput, setSlideOutput] = useState<SlideOutput>({ slide_lines: [], subtitle_lines: [], current_slide: 0, current_subtitle: 0 });
 
     const [currentSubtitle, setCurrentSubtitle] = useState(1)
 
     useEffect(() => {
-        if (currentSubtitle > 0) {
-            refreshSlideOutput(currentSubtitle);
-        }
-    }, [currentSubtitle]);
-
-    useEffect(() => {
-        refreshSlideOutput(1);
-    }, [currentLyric]);
+        refreshSlideOutput(currentSubtitle);        
+    }, [currentLyric, currentSubtitle]);
 
     function refreshSlideOutput(subtiteID: number) {
         if (currentLyric.lines.length === 0) {
             return false;
+        }        
+        
+        if (currentSubtitle === 0){
+            subtiteID = 1;
         }
 
         let newSlideOutput: SlideOutput = { slide_lines: [], subtitle_lines: [], current_slide: 0, current_subtitle: 0 };
@@ -108,10 +98,6 @@ export default function Home() {
 
         setSlideOutput(newSlideOutput);
     }
-
-    const handleClick = () => {
-        setOpen(true);
-    };
 
     const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
         if (reason === 'clickaway') {
@@ -180,7 +166,7 @@ export default function Home() {
         const { options } = event.target as HTMLSelectElement;
 
         for (let i = 0, l = options.length; i < l; i += 1) {
-            if (options[i].selected) {
+            if (options[i].selected) {                
                 setCurrentLyric(loadedLyrics[i]);
                 setCurrentLyricIndex([i]);
                 setCurrentSubtitle(1);
@@ -206,26 +192,12 @@ export default function Home() {
         setLoadedLyrics(dadosJson);
     }
 
-    function handleChangeSubtitleSelected(event: MouseEvent<HTMLInputElement>) {
-        const { id } = event.target as HTMLInputElement;
-        const indexSubtitle = parseInt(id.split("_")[1]);
-        setCurrentSubtitle(indexSubtitle)
+    function handleChangeSubtitleSelected(lyricLine: LyricLine) {
+        setCurrentSubtitle(lyricLine.id_subtitle)
     }
 
-    //TODO: otimizar essa parte!!!
-    function handleChangePhrase(event: ChangeEvent<HTMLInputElement>) {
-        const { value, id } = event.target;
-
-        console.log(`id: ${id} - ${value} `);
-
-        const idArray = parseInt(id.split("_")[0]);
-
-        const newLines = currentLyric.lines.map(l => {
-                            if (l.id === idArray) {
-                                l.phrase = value;
-                            }
-                            return l;
-                        });
+    function handleChangeLyricLine(lyric: LyricLine) {        
+        const newLines = currentLyric.lines.map(l => l.id === lyric.id ? lyric : l);
         setCurrentLyric({...currentLyric, lines: newLines});
     }
 
@@ -233,11 +205,12 @@ export default function Home() {
         if(newLyric){
             setLoadedLyrics([...loadedLyrics, editedLyric])
         } else {
-            let newLyrics = loadedLyrics.map(lyric => lyric.lyric_name === editedLyric.lyric_name ? lyric : lyric )
+            let newLyrics = loadedLyrics.map(lyric => lyric.lyric_name === editedLyric.lyric_name ? editedLyric : lyric )
             setLoadedLyrics(newLyrics);
         }
     }
 
+    
     return (
         <div className="main-container">
             <div className="left-panel">
@@ -266,22 +239,22 @@ export default function Home() {
                 </div>
                 <div className="lyric-edit">
                     <LyricEditorComp 
-                        lines={currentLyric.lines}
+                        lyric={currentLyric}
                         currentSlide={slideOutput.current_slide}
                         currentSubtitle={currentSubtitle}
                         editLyric={handleEditLyric}
-                        onPhraseDoubleClick={handleChangeSubtitleSelected}
-                        onPhraseChange={handleChangePhrase}
+                        onLyricLineDoubleClick={handleChangeSubtitleSelected}
+                        onLyricLineChanged={handleChangeLyricLine}
                     />
                 </div>
             </div>
             <div className="right-panel">
-
+                
                 <CSSPanelComp
                     handleApplyCSS={handleApplyCSS}
                     handleChangeCSS={handleChangeCSS}
                     stringCSSJson={stringCSSJson} />
-
+            
                 <SlideOutputComp
                     cssSlide={cssSlide}
                     cssSubtitle={cssSubtitle}

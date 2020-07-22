@@ -1,0 +1,22 @@
+.css-panel {
+    display: flex;
+    flex: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.css-panel .css-input {
+    flex: 1;
+}
+
+#multilineCSS {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.css-panel .buttons {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    justify-content: space-around;        
+}

@@ -1,23 +1,23 @@
-import React from 'react';
-import {useState, useEffect} from 'react';
-import { CSSProperties, MouseEvent, ChangeEvent } from 'react';
+import React, {useState, useEffect, MouseEvent, ChangeEvent } from 'react';
+import { nanoid } from "nanoid";
 import './LyricEditorComp.css';
-import {LyricLine, Lyric} from '../types'
+import {LyricLine, Lyric} from '../../types'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Switch from '@material-ui/core/Switch';
+import LineEditorComp from './LineEditorComp';
 
 type LyricEditorProps = {
-    lines: LyricLine[],
+    lyric: Lyric,
     currentSlide: number,
     currentSubtitle: number,
     editLyric: (l:Lyric, newLyric?: boolean) => void,
-    onPhraseDoubleClick: (e:MouseEvent<HTMLInputElement, globalThis.MouseEvent>) => void,
-    onPhraseChange: (e:ChangeEvent<HTMLInputElement>) => void,
+    onLyricLineDoubleClick: (l:LyricLine) => void,
+    onLyricLineChanged: (l:LyricLine) => void,
 }
 
 export default function LyricEditorComp(
-    { lines, currentSlide, currentSubtitle, onPhraseDoubleClick, onPhraseChange, editLyric }: LyricEditorProps) {
+    { lyric, currentSlide, currentSubtitle, editLyric, onLyricLineDoubleClick: onLyricLineControlClick, onLyricLineChanged }: LyricEditorProps) {
 
     const [lyricSwitch, setLyricSwitch] = useState({
         checkedA: true,
@@ -26,11 +26,10 @@ export default function LyricEditorComp(
     const [currentPhraseInput, setCurrentPhraseInput] = useState('');
     const [nPhraseSlide, setNPhraseSlide] = useState<number>(10);
     const [nPhraseSubtitle, setNPhraseSubtitle] = useState<number>(2);
-
+    
     useEffect(()=> {
-        console.log('use effect !!!!! lines changed');
-        setCurrentPhraseInput(lines.map(r => r.phrase).join('\n'));
-    }, [lines])
+        setCurrentPhraseInput(lyric.lines.map(r => r.phrase).join('\n'));
+    }, [lyric.lines])
 
     function handleAddLyric() {
         let newLyric = makeLyric();
@@ -49,9 +48,10 @@ export default function LyricEditorComp(
         currentPhraseInput.split('\n').map((line, count) => {
             let nSlide = ~~(count / nPhraseSlide) + 1;       // ~~ to return the integer part.
             let nSubtitle = ~~(count / nPhraseSubtitle) + 1; // ~~ to return the integer part.
-            newLyricLines = [...newLyricLines, { id: count, type: 'phrase', id_slide: nSlide, id_subtitle: nSubtitle, phrase: line }];
+            newLyricLines = [...newLyricLines, { id: nanoid(), type: 'phrase', id_slide: nSlide, id_subtitle: nSubtitle, phrase: line }];
         })
         let newLyric: Lyric = {
+            id: nanoid(),
             lyric_name: newLyricLines[0].phrase,
             lines: newLyricLines,
             lines_slide: nPhraseSlide,
@@ -59,22 +59,14 @@ export default function LyricEditorComp(
             total_slides: ~~(newLyricLines.length / nPhraseSubtitle),
         }
         return newLyric;
-    }
-
-    const isShowingSlide: CSSProperties = {
-        backgroundColor: "blue",
-    }
-
-    const isShowingSubtitle: CSSProperties = {
-        backgroundColor: "green",
-    }
+    }  
 
     const inputLyricTemplate = 
         <TextField
             id="multilineLyrics"
             label="Letra"
             multiline
-            rows={20}
+            rows={25}
             value={currentPhraseInput}
             onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setCurrentPhraseInput(e.target.value)}
             variant="outlined"
@@ -82,26 +74,19 @@ export default function LyricEditorComp(
         />
     
     const editLyricTemplate = 
-        <div id="lyricEditTable">        
-            {lines.map(l => (            
-                <div id={`line_${l.id.toString()}`} className="line">
-                    <div className="column-params">
-                        <input type="text" id={`inputType_${l.id}`} value={l.type} />
-                        <input type="text" id={`inputNumSl_${l.id}`} value={l.id_slide} style={l.id_slide===currentSlide ? isShowingSlide : {}}/>
-                        <input type="text" id={`inputNumSu_${l.id}`} value={l.id_subtitle} style={l.id_subtitle===currentSubtitle ? isShowingSubtitle : {}}/>                        
-                    </div>
-                    <div className="column-phrase">
-                        <input type="text" id={`${l.id}_${l.id_subtitle}`} value={l.phrase} 
-                            onDoubleClick={onPhraseDoubleClick}
-                            onChange={onPhraseChange}/>
-                    </div>
-                </div>
-            ))}
-            <Button variant="contained" id="buttonApply">Aplicar</Button>            
-        </div>
-
+        lyric.lines.map(l =>                 
+            <LineEditorComp
+                key={l.id}
+                initialValue={l}
+                currentSlide={currentSlide}
+                currentSubtitle={currentSubtitle}
+                onLineSubmit={onLyricLineChanged}
+                onLineControlClick={onLyricLineControlClick}                    
+            />
+        )                    
+        
     return (
-        <div>
+        <div className="teste">
             <Switch
                 checked={lyricSwitch.checkedA}
                 onChange={(event) => setLyricSwitch({ ...lyricSwitch, [event.target.name]: event.target.checked })}

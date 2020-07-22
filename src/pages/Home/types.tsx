@@ -1,5 +1,6 @@
 export type Lyric = {
-    lyric_name: string,   // Nome da música que serve de ID
+    id: string,           // Identificador único
+    lyric_name: string,   // Nome da música. O mesmo que LyricLine.type = 'Title'
     lines: LyricLine[];   // Linhas da música
     lines_slide: number;    // Quantidade de linhas por slide 
     lines_subtitle: number; // Quantidade de linhas por subtítulo
@@ -7,7 +8,7 @@ export type Lyric = {
 }
 
 export type LyricLine = {
-    id: number;          // Numero da linha 
+    id: string;          // Identificador único
     type: string | 'title' | 'phrase' | 'author';      // Tipo da linha
     id_slide: number;    // Numero do slide
     id_subtitle: number; // Numero do subtítulo

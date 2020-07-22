@@ -1,0 +1,30 @@
+.line {
+    display: flex;    
+}
+
+
+.column-params {
+    display: flex;
+    flex: 0;
+    flex-direction: row;
+
+}
+
+.column-params > input {
+    width: 14px;
+    text-align: center;
+}
+
+.column-phrase > input {
+    width: 300px;
+    border: none;
+    padding-left: 10px;
+    color: gray;
+}
+
+.teste {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+}

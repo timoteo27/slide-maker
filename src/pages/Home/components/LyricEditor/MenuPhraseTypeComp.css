@@ -1,0 +1,9 @@
+.main-div {
+    display: flex;    
+}
+
+.main-div > input {
+    width: 14px;
+    text-align: center;
+    user-select: none;
+}
