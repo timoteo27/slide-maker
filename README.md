@@ -1,12 +1,12 @@
 # Meuc Slide Maker
 
-Projeto para auxilio na criação de slides e subtítulos de músicas.
-As músicas cadastradas são geradas em um layout específico para envio via NDI (https://www.newtek.com/ndi/applications/) ao OBS Studio.
+A simple React program to help the creation of slides and subtitles of songs. The registered songs are generated in a specific layout for sending via NDI (https://www.newtek.com/ndi/applications/) to OBS Studio.
 
-Em desenvolvimento...
+## Main Screen
+![current_main_screen](https://github.com/timoteo27/meuc-slide-maker/blob/master/documentation/main_screen.png?raw=true "Current Main Screen")
 
-## Instalação
-Copie o projeto e execute 'yarn install'
+## How to install
+From the project folder, execute the following command: `yarn install`
 
-## Execução
-Através do comando 'yarn install'
+## How to run
+To run the app, execute the following command: `yarn start`
