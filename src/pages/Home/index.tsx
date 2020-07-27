@@ -1,6 +1,8 @@
 import React,  { 
     useState, useEffect,
-    ChangeEvent, KeyboardEvent } from 'react';
+    ChangeEvent } from 'react';
+
+import { nanoid } from "nanoid";
 
 import { Box, Button, Fab, Snackbar, FormControl, Select, CircularProgress, Typography } from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
@@ -70,18 +72,18 @@ export default function Home() {
         refreshSlideOutput(currentSubtitle);        
     }, [currentLyric, currentSubtitle]);
 
-    function refreshSlideOutput(subtiteID: number) {
+    function refreshSlideOutput(subtitleID: number) {
         if (currentLyric.lines.length === 0) {
             return false;
         }        
         
         if (currentSubtitle === 0){
-            subtiteID = 1;
+            subtitleID = 1;
         }
 
         let newSlideOutput: SlideOutput = { slide_lines: [], subtitle_lines: [], current_slide: 0, current_subtitle: 0 };
 
-        let filteredSubtitles = currentLyric.lines.filter(phrase => phrase.id_subtitle === subtiteID);
+        let filteredSubtitles = currentLyric.lines.filter(phrase => phrase.id_subtitle === subtitleID);
 
         let currentSlide = filteredSubtitles[0].id_slide;
         let filteredSlides = currentLyric.lines.filter((value) => value.id_slide === currentSlide);
@@ -185,6 +187,12 @@ export default function Home() {
         a.click()
     }
 
+    function handleNewLyric() {
+        setCurrentLyric({ id: '', lyric_name: '', lines: [], lines_slide: 0, lines_subtitle: 0, total_slides: 0 });        
+        setCurrentSubtitle(0);
+
+    }
+
     function handleImportLyrics() {
         console.log("handleImportLyrics");
         let dadosJson: Lyric[] = DATAJSON_LYRICS;
@@ -233,6 +241,7 @@ export default function Home() {
                         </Select>
                     </FormControl>
                     <div className="lyrics-buttons">
+                        <Button id="buttonExportJSON" variant="contained" onClick={handleNewLyric}>Nova Música</Button>
                         <Button id="buttonExportJSON" variant="contained" onClick={handleImportLyrics}>Importar</Button>
                         <Button id="buttonExportJSON" variant="contained" onClick={handleExportLyrics}>Exportar</Button>
                     </div>
