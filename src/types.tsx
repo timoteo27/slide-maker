@@ -18,6 +18,7 @@ export type LyricLine = {
 export type SlideOutput = {
   slide_lines: string[];
   subtitle_lines: string[];
+  subtitle_background: string;
   current_slide: number;
   current_subtitle: number;
 };

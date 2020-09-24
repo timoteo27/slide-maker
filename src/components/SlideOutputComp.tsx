@@ -1,6 +1,7 @@
 import React from 'react';
 import { CSSProperties } from '@material-ui/core/styles/withStyles';
 import { SlideOutput } from '../types';
+import titleBackground from '../assets/images/title_background.png';
 
 type SlideOutputProps = {
   cssSlide: CSSProperties;

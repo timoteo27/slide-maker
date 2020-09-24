@@ -27,9 +27,9 @@ import LyricEditorComp from './components/LyricEditorComp';
 import './App.css';
 
 import DATAJSON_LYRICS from './data/lyrics.json';
-import socketIOClient from 'socket.io-client';
 import { nanoid } from 'nanoid';
 import moment from 'moment';
+import { socket, socketUrlServer } from './service/socket';
 
 export default function App() {
   const defaultCSS: CSSProperties[] = [
@@ -41,7 +41,7 @@ export default function App() {
       alignItems: 'center',
       backgroundColor: 'blue',
       fontSize: '24px',
-      fontFamily: 'Segoe UI',
+      fontFamily: 'Arial-Rounded, Segoe UI',
       textShadow: '2px 2px #00000044',
       color: 'white',
       width: '512px',
@@ -54,9 +54,11 @@ export default function App() {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'green',
+      //backgroundColor: 'green',
+      backgroundImage: 'url(title_background.png)',
       fontSize: '16px',
-      fontFamily: 'Segoe UI',
+      fontFamily: 'Arial-Rounded, Segoe UI',
+      fontWeight: 'bold',
       textShadow: '1.5px 1.5px #000000aa',
       color: 'white',
       width: '512px',
@@ -93,49 +95,50 @@ export default function App() {
   const [slideOutput, setSlideOutput] = useState<SlideOutput>({
     slide_lines: [],
     subtitle_lines: [],
+    subtitle_background: '',
     current_slide: 0,
     current_subtitle: 0,
   });
   const [urlServer, setUrlServer] = useState('Não informado');
-  const [statusServer, setstatusServer] = useState('Não conectado');
+  const [statusServer, setStatusServer] = useState('Não conectado');
   const [currentSubtitle, setCurrentSubtitle] = useState(1);
-
-  let socket: SocketIOClient.Socket;
 
   useEffect(() => {
     refreshSlideOutput(currentSubtitle);
   }, [currentLyric, currentSubtitle]);
 
   useEffect(() => {
-    const urlServer = process.env.REACT_APP_NODE_SERVER;
-    if (urlServer !== undefined) {
-      setUrlServer(urlServer);
-      socket = socketIOClient(urlServer);
-      console.dir(socket);
+    if (socket.connected) {
+      setUrlServer(socketUrlServer);
+      setStatusServer(`Ativo :) ${returnNow()}`);
+
+      socket.on('connect_error', () => {
+        setStatusServer(`Erro ao tentar conectar... ${returnNow()}`);
+      });
+
+      socket.on('connect', () => {
+        setStatusServer(`Ativo :) ${returnNow()}`);
+      });
+
+      socket.on('disconnect', () => {
+        setStatusServer(`Inativo :( ${returnNow()}`);
+      });
+
+      socket.on('reconnect', () => {
+        setStatusServer(`Reconectou... Ativo :) ${returnNow()}`);
+      });
     }
 
-    socket.on('connect_error', () => {
-      setstatusServer(`Erro ao tentar conectar... ${returnNow()}`);
-    });
-
-    socket.on('connect', () => {
-      setstatusServer(`Ativo :) ${returnNow()}`);
-    });
-
-    socket.on('disconnect', () => {
-      setstatusServer(`Inativo :( ${returnNow()}`);
-    });
-
-    socket.on('reconnect', () => {
-      setstatusServer(`Reconectou... Ativo :) ${returnNow()}`);
-    });
-
     return () => {
-      if (urlServer !== undefined) {
-        socket.disconnect();
-      }
+      socket.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    if (socket.connected) {
+      socket.emit('SlideOutput Update', slideOutput);
+    }
+  }, [slideOutput]);
 
   function returnNow() {
     return moment().format('LTS');
@@ -153,16 +156,17 @@ export default function App() {
     let newSlideOutput: SlideOutput = {
       slide_lines: [],
       subtitle_lines: [],
+      subtitle_background: '',
       current_slide: 0,
       current_subtitle: 0,
     };
 
-    let filteredSubtitles = currentLyric.lines.filter(
+    const filteredSubtitles = currentLyric.lines.filter(
       (phrase) => phrase.id_subtitle === subtitleID
     );
 
-    let currentSlide = filteredSubtitles[0].id_slide;
-    let filteredSlides = currentLyric.lines.filter(
+    const currentSlide = filteredSubtitles[0].id_slide;
+    const filteredSlides = currentLyric.lines.filter(
       (value) => value.id_slide === currentSlide
     );
 
@@ -173,13 +177,15 @@ export default function App() {
       newSlideOutput.subtitle_lines.push(subtitle.phrase);
     });
 
+    if (filteredSubtitles.findIndex((line) => line.type === 'title') >= 0) {
+      newSlideOutput.subtitle_background =
+        './assets/images/title_background.png';
+    }
+
     newSlideOutput.current_slide = currentSlide;
     newSlideOutput.current_subtitle = currentSubtitle;
 
     setSlideOutput(newSlideOutput);
-
-    if (socket !== undefined && socket.connected)
-      socket.emit('SlideOutput Update', newSlideOutput);
   }
 
   const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
@@ -220,7 +226,7 @@ export default function App() {
     }
 
     function blankSlide() {
-      let newSlideOutput: SlideOutput = {
+      const newSlideOutput: SlideOutput = {
         ...slideOutput,
         slide_lines: [],
         subtitle_lines: [],
@@ -292,7 +298,7 @@ export default function App() {
 
   function handleChangeLyricLine(
     lyric: LyricLine,
-    command: 'add' | 'remove' | 'update'
+    command: 'add' | 'update' | 'remove'
   ) {
     switch (command) {
       case 'add':
@@ -329,14 +335,29 @@ export default function App() {
     }
   }
 
-  function handleEditLyric(editedLyric: Lyric, newLyric = false) {
-    if (newLyric) {
-      setLoadedLyrics([...loadedLyrics, editedLyric]);
-    } else {
-      let newLyrics = loadedLyrics.map((lyric) =>
-        lyric.lyric_name === editedLyric.lyric_name ? editedLyric : lyric
-      );
-      setLoadedLyrics(newLyrics);
+  function handleEditLyric(
+    editedLyric: Lyric,
+    command: 'add' | 'update' | 'remove'
+  ) {
+    switch (command) {
+      case 'add':
+        setLoadedLyrics([...loadedLyrics, editedLyric]);
+        break;
+      case 'update':
+        const newLyrics = loadedLyrics.map((lyric) =>
+          lyric.id === editedLyric.id ? editedLyric : lyric
+        );
+        console.dir(editedLyric);
+        console.dir(loadedLyrics);
+        console.dir(newLyrics);
+        setLoadedLyrics(newLyrics);
+        break;
+      case 'remove':
+        const removedLyric = loadedLyrics.filter(
+          (lyric) => lyric.id !== editedLyric.id
+        );
+        setLoadedLyrics(removedLyric);
+        break;
     }
   }
 
@@ -352,10 +373,10 @@ export default function App() {
             <FormControl id="formLyricSelect" variant="outlined">
               <Select
                 id="selectLyric"
+                aria-label=""
                 multiple
                 native
                 label="Músicas"
-                labelWidth={70}
                 value={currentLyricIndex}
                 onChange={handleChangeLyricSelect}
               >

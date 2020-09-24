@@ -11,7 +11,7 @@ type LyricEditorProps = {
   lyric: Lyric;
   currentSlide: number;
   currentSubtitle: number;
-  editLyric: (l: Lyric, newLyric?: boolean) => void;
+  editLyric: (l: Lyric, command: 'add' | 'remove' | 'update') => void;
   onLyricLineDoubleClick: (l: LyricLine) => void;
   onLyricLineChanged: (
     l: LyricLine,
@@ -39,17 +39,21 @@ export default function LyricEditorComp({
   }, [lyric.lines]);
 
   function handleAddLyric() {
-    let newLyric = makeLyric();
-    editLyric(newLyric, true);
+    const newLyric = makeLyric();
+    editLyric(newLyric, 'add');
     setCurrentPhraseInput('');
   }
 
   function handleAlterLyric() {
-    let newLyric = makeLyric();
-    editLyric(newLyric, false);
+    const editedLyric = makeLyric(lyric.id);
+    editLyric(editedLyric, 'update');
   }
 
-  function makeLyric() {
+  function handleDeleteLyric() {
+    editLyric(lyric, 'remove');
+  }
+
+  function makeLyric(lyricEditId?: string) {
     let newLyricLines: LyricLine[] = [];
 
     let nSlide = 1;
@@ -90,8 +94,9 @@ export default function LyricEditorComp({
         nSlide++;
       }
     });
-    let newLyric: Lyric = {
-      id: nanoid(),
+
+    const newLyric: Lyric = {
+      id: lyricEditId === undefined ? nanoid() : lyricEditId,
       lyric_name: newLyricLines[0].phrase,
       lines: newLyricLines,
       lines_subtitle: nPhraseSubtitle,
@@ -127,7 +132,7 @@ export default function LyricEditorComp({
   ));
 
   return (
-    <div className="teste">
+    <div className="main-box">
       <Switch
         checked={lyricSwitch.checkedA}
         onChange={(event) =>
@@ -168,6 +173,14 @@ export default function LyricEditorComp({
           onClick={handleAlterLyric}
         >
           Alterar
+        </Button>
+        <Button
+          id="buttonMakeSlides"
+          variant="contained"
+          color="secondary"
+          onClick={handleDeleteLyric}
+        >
+          Excluir
         </Button>
       </div>
     </div>
